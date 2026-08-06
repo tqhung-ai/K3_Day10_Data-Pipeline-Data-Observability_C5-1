@@ -60,4 +60,5 @@ Expected evidence after CP2:
 - [x] Frozen model, collection names, metadata and artifact paths.
 - [x] Prepared reproducible semantic-search, ID-lookup and title-lookup smoke checks.
 - [x] Verified the current clean input contains the required indexing fields for 24 rows.
-- [ ] Embedding manifest and Chroma collection are intentionally pending CP2.
+- [x] Embedding manifest and Chroma collections were completed in CP2 and retained
+  separately for baseline, corrupted and repaired states.
