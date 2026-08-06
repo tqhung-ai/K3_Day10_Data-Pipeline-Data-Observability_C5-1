@@ -1,0 +1,146 @@
+[
+  {
+    "id": "407a3c50-4e46-455a-be9c-e6442eb8de13",
+    "question_type": "summary",
+    "question": "T\u00f3m t\u1eaft n\u1ed9i dung ch\u00ednh c\u1ee7a b\u00e0i b\u00e1o 'Retrieval-Augmented Generation (RAG), Generative AI, and Agentic AI Governance: An Integrated Enterprise Governance Prioritization Architecture'?",
+    "ground_truth": "Abstract Enterprise adoption of artificial intelligence (AI) systems, including Generative AI (GenAI), Retrieval-Augmented Generation (RAG), and agentic AI, is advancing faster than many organizations can adapt their governance, audit, cybersecurity, and executive oversight practices. This paper develops a proposed integrated AI governance prioritization architecture using a design-science research approach, supported by exploratory platform-risk analysis, a reproducible platform-risk dataset, a Monte Carlo robustness assessment, a framework coverage matrix, a Governance Priority Score (GPS)-based demonstration, and a public-document relevance assessment. The primary contribution is an integrated governance decision-support architecture that uses the Enterprise AI Platform Taxonomy (EAPT) to estimate platform burden, the Enterprise AI Risk Taxonomy (EART) to organize governance-risk exposure, the Enterprise AI Governance Maturity Model (EAGM) to represent organizational readiness, and the Integrated Agentic AI Governance Framework (IAGF) to identify agentic AI oversight requirements within a unified workflow. These components are operationally connected through GPS, which links platform burden, governancerisk gaps, organizational readiness, agentic runtime-control needs, and executive decision support. The proposed architecture draws upon NIST AI RMF, NIST AI 600-1, ISO/IEC 42001, COBIT, OWASP LLM Top 10, MITRE ATLAS, the EU AI Act, and related AI governance literature. A rubric-based analytical dataset covering 19 enterprise AI platforms evaluates each platform across eight subdimensions, with final platform-risk scores computed as the arithmetic mean of data access scope, operational autonomy, tool/API integration breadth, external connectivity, governance burden, cybersecurity exposure, adoption and shadow-AI risk, and supply-chain integrity. TThe expanded scoring method produces high rank stability relative to the original final-score dataset, with Spearman\u2019s \u03c1 = 0.996, and remains directionally stable under coding-uncertainty stress testing; these results are interpreted only as internal coding stability and robustness, not external validation. Public evidence from U.S. government agencies, universities, healthcare systems, and financial institutions is used to assess architecture relevance and observability, not to claim organizational effectiveness. The paper contributes a bounded design-science foundation for future inter-rater reliability testing, Delphi expert validation, organizational pilots, psychometric evaluation, and dashboard usability assessment.",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10012178/v1"
+    ]
+  },
+  {
+    "id": "88ec070f-c18c-477e-a3da-aad4f96cd1bd",
+    "question_type": "authors",
+    "question": "Ai l\u00e0 t\u00e1c gi\u1ea3 c\u1ee7a b\u00e0i b\u00e1o 'Retrieval-Augmented Generation (RAG), Generative AI, and Agentic AI Governance: An Integrated Enterprise Governance Prioritization Architecture'?",
+    "ground_truth": "['Audrey Rah', 'Sven Hahues']",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10012178/v1"
+    ]
+  },
+  {
+    "id": "a0d51c3b-76d8-45d7-8e49-75bd7487052a",
+    "question_type": "date",
+    "question": "B\u00e0i b\u00e1o 'Retrieval-Augmented Generation (RAG), Generative AI, and Agentic AI Governance: An Integrated Enterprise Governance Prioritization Architecture' \u0111\u01b0\u1ee3c xu\u1ea5t b\u1ea3n v\u00e0o ng\u00e0y n\u00e0o?",
+    "ground_truth": "2026-06-15",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10012178/v1"
+    ]
+  },
+  {
+    "id": "e0118381-498a-401d-94ca-69bf85d047a0",
+    "question_type": "categories",
+    "question": "B\u00e0i b\u00e1o 'Retrieval-Augmented Generation (RAG), Generative AI, and Agentic AI Governance: An Integrated Enterprise Governance Prioritization Architecture' thu\u1ed9c chuy\u00ean m\u1ee5c ch\u00ednh n\u00e0o?",
+    "ground_truth": "Uncategorized",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10012178/v1"
+    ]
+  },
+  {
+    "id": "78713eca-0029-41b2-bd0e-e6a04f9aea82",
+    "question_type": "summary",
+    "question": "T\u00f3m t\u1eaft n\u1ed9i dung ch\u00ednh c\u1ee7a b\u00e0i b\u00e1o 'Speculative Retrieval-Augmented Generation for Cost-Efficient Large Language Model Inference'?",
+    "ground_truth": "Abstract - This work focuses on the two crucial bottlenecks in Retrieval-Augmented Generation (RAG): high inference latency and expensive computation cost. RAG enhances the factual correctness of Large Language Models (LLMs) by utilizing external knowledge sources; However, the auto-To achieve a good recall, the system applies a two-way retrieval mechanism: Dense retrieval: This module uses BAAI/bge-small-en-v1.5 to create a 384-dimensional embedding space, where queries and documents are mapped. The embeddings are stored in a FAISS IndexFlatL2. Sparse retrieval: This module uses TF-IDF vectorization to capture an exact keyword match. Reranking: A simple heuristic mechanism of matching substrings of the query terms in the documents selected to perform the final step of ranking them for prompt introduce a novel speculative RAG framework that combines hybrid retrieval with speculative decoding. Our framework employs hybrid dense vector search (BGE-small) and sparse keyword search (TF-IDF) for enhanced recall followed by a lightweight re-ranker model. A compact draft model (TinyLlama-1.1B) makes tentative future token generation, then a larger verifier model (Mistral-7B) checks the correctness of the candidate token. Empirical experiments demonstrate 33% and 29% improvement in inference latency and token reduction, respectively, compared to the baseline of a typical 7B model, while retaining 94% accuracy on factoid tasks. Key Words: Retrieval-Augmented Generation, Speculative Decoding, Large Language Models, Inference Optimization, Hybrid Retrieval",
+    "ground_truth_doc_ids": [
+      "10.55041/isjem07213"
+    ]
+  },
+  {
+    "id": "6adb1f91-6e89-45dd-ad3b-8fbf8faf0370",
+    "question_type": "authors",
+    "question": "Ai l\u00e0 t\u00e1c gi\u1ea3 c\u1ee7a b\u00e0i b\u00e1o 'Speculative Retrieval-Augmented Generation for Cost-Efficient Large Language Model Inference'?",
+    "ground_truth": "['Dr. Sumalatha P', 'Manoj Kumar']",
+    "ground_truth_doc_ids": [
+      "10.55041/isjem07213"
+    ]
+  },
+  {
+    "id": "a5e33dea-38eb-450a-ac75-eba2a2833a87",
+    "question_type": "date",
+    "question": "B\u00e0i b\u00e1o 'Speculative Retrieval-Augmented Generation for Cost-Efficient Large Language Model Inference' \u0111\u01b0\u1ee3c xu\u1ea5t b\u1ea3n v\u00e0o ng\u00e0y n\u00e0o?",
+    "ground_truth": "2026-05-06",
+    "ground_truth_doc_ids": [
+      "10.55041/isjem07213"
+    ]
+  },
+  {
+    "id": "81e3b63b-4b65-4e6d-a11c-dde765706dd3",
+    "question_type": "categories",
+    "question": "B\u00e0i b\u00e1o 'Speculative Retrieval-Augmented Generation for Cost-Efficient Large Language Model Inference' thu\u1ed9c chuy\u00ean m\u1ee5c ch\u00ednh n\u00e0o?",
+    "ground_truth": "Uncategorized",
+    "ground_truth_doc_ids": [
+      "10.55041/isjem07213"
+    ]
+  },
+  {
+    "id": "23a9d096-2dd6-451c-ae9d-1baec45f8ede",
+    "question_type": "summary",
+    "question": "T\u00f3m t\u1eaft n\u1ed9i dung ch\u00ednh c\u1ee7a b\u00e0i b\u00e1o 'SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation'?",
+    "ground_truth": "Summary In high-risk industrial settings, leveraging large language models (LLMs) for automated accident analysis and generating safety reports has emerged as an efficient workflow. However, this approach is fundamentally constrained by the models\u2019 inherent knowledge limitations, frequently resulting in analyses that lack domain-specific understanding and regulatory alignment. To tackle this issue, we introduce SafeRAG, a multistage retrieval-augmented framework for safety report generation. Specifically, the framework uses an entity-centric approach that prompts the LLMs to internally generate domain-specific knowledge. Concurrently, it performs a hierarchical retrieval of external regulations relevant to the accident at topic, concept, and context levels. To obtain well-structured reports, we leverage prompt engineering, integrating internal and external knowledge. Furthermore, a domain-expert persona is also assigned to help LLMs analyze accidents from a specific perspective. To evaluate our approach, we construct a data set from 10,818 accident-description/report pairs collected from real-world industry reports. Experiments show that SafeRAG substantially outperforms baseline LLMs on metrics that include bidirectional encoder representations from transformers (BERTScore) and bidirectional auto-regressive transformers (BARTScore), demonstrating the effectiveness of our approach.",
+    "ground_truth_doc_ids": [
+      "10.2118/234689-pa"
+    ]
+  },
+  {
+    "id": "5c55875a-412a-4359-a3de-5771c2fcb120",
+    "question_type": "authors",
+    "question": "Ai l\u00e0 t\u00e1c gi\u1ea3 c\u1ee7a b\u00e0i b\u00e1o 'SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation'?",
+    "ground_truth": "['Qianwen Cao', 'Chiyu Zhang', 'Junxiong Ning', 'Gongru Li']",
+    "ground_truth_doc_ids": [
+      "10.2118/234689-pa"
+    ]
+  },
+  {
+    "id": "4dfe7b84-b65b-4699-94e1-6b2ebd3b8533",
+    "question_type": "date",
+    "question": "B\u00e0i b\u00e1o 'SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation' \u0111\u01b0\u1ee3c xu\u1ea5t b\u1ea3n v\u00e0o ng\u00e0y n\u00e0o?",
+    "ground_truth": "2026-08-01",
+    "ground_truth_doc_ids": [
+      "10.2118/234689-pa"
+    ]
+  },
+  {
+    "id": "efad0f1e-0f3d-4037-8a2a-bfec49180753",
+    "question_type": "categories",
+    "question": "B\u00e0i b\u00e1o 'SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation' thu\u1ed9c chuy\u00ean m\u1ee5c ch\u00ednh n\u00e0o?",
+    "ground_truth": "Uncategorized",
+    "ground_truth_doc_ids": [
+      "10.2118/234689-pa"
+    ]
+  },
+  {
+    "id": "d0dfffe8-8ee8-40a3-bef6-d06a1022d857",
+    "question_type": "summary",
+    "question": "T\u00f3m t\u1eaft n\u1ed9i dung ch\u00ednh c\u1ee7a b\u00e0i b\u00e1o 'Retrieval-Augmented Large Language Model Agents for Automated Scientific Literature Review Generation'?",
+    "ground_truth": "This study investigates a method that integrates retrieval-augmented mechanisms into large language model agents for scientific literature review generation. The approach addresses the limitations of traditional review models that rely on parametric knowledge with insufficient timeliness and limited coverage. Incorporating external document retrieval and dynamic information fusion into the generation process enhances the accuracy and completeness of the output. The overall framework consists of query encoding, semantic retrieval, document filtering, knowledge fusion, language modeling, task planning, memory storage, and reinforcement optimization, forming a closed loop of retrieval, understanding, and generation. Relevant document fragments are first retrieved through semantic vector search to ensure comprehensive and reliable information sources. These external representations are then integrated with the internal embeddings of the language model through weighted fusion, which preserves fluency while maintaining factual grounding. The task planning module constrains logical flow and text structure, and reinforcement learning optimization further improves relevance and consistency. Comparative experiments on large-scale scientific literature datasets demonstrate that the method outperforms existing approaches on ROUGE, BLEU, METEOR, and diversity metrics, validating its effectiveness and practicality. The findings show that combining retrieval augmentation with agent architectures can significantly improve coverage, accuracy, and language quality in review generation, providing a feasible solution for knowledge organization in complex literature environments.",
+    "ground_truth_doc_ids": [
+      "10.20944/preprints202604.0339.v1"
+    ]
+  },
+  {
+    "id": "2ba4d58e-a0f1-4d21-b01b-10bb511077ea",
+    "question_type": "authors",
+    "question": "Ai l\u00e0 t\u00e1c gi\u1ea3 c\u1ee7a b\u00e0i b\u00e1o 'Retrieval-Augmented Large Language Model Agents for Automated Scientific Literature Review Generation'?",
+    "ground_truth": "['Ruotong Wang', 'Nyutian Long', 'Shunqi Liu', 'Yuxi Wang', 'Zhen Qi', 'Huajun Zhang']",
+    "ground_truth_doc_ids": [
+      "10.20944/preprints202604.0339.v1"
+    ]
+  },
+  {
+    "id": "ea687c4a-288d-4c14-9344-40efa73473bd",
+    "question_type": "date",
+    "question": "B\u00e0i b\u00e1o 'Retrieval-Augmented Large Language Model Agents for Automated Scientific Literature Review Generation' \u0111\u01b0\u1ee3c xu\u1ea5t b\u1ea3n v\u00e0o ng\u00e0y n\u00e0o?",
+    "ground_truth": "2026-04-06",
+    "ground_truth_doc_ids": [
+      "10.20944/preprints202604.0339.v1"
+    ]
+  },
+  {
+    "id": "700683f4-42ec-4c04-bbbb-753c512393f1",
+    "question_type": "categories",
+    "question": "B\u00e0i b\u00e1o 'Retrieval-Augmented Large Language Model Agents for Automated Scientific Literature Review Generation' thu\u1ed9c chuy\u00ean m\u1ee5c ch\u00ednh n\u00e0o?",
+    "ground_truth": "Uncategorized",
+    "ground_truth_doc_ids": [
+      "10.20944/preprints202604.0339.v1"
+    ]
+  }
+]
