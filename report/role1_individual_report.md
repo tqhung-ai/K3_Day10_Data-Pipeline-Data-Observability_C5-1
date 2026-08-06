@@ -2,8 +2,11 @@
 
 ## Scope
 
-Role 1 owns the shared contract, release checks and end-to-end handoff. The
-member name/MSSV must be added before submission.
+| Thành viên | MSSV |
+|---|---|
+| Trần Quốc Hùng | 2A202601683 |
+
+Role 1 owns the shared contract, release checks and end-to-end handoff.
 
 ## Work and evidence
 

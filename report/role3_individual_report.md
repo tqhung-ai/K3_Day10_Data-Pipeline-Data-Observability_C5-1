@@ -2,8 +2,11 @@
 
 ## Scope
 
+| Thành viên | MSSV |
+|---|---|
+| Phạm Văn Lưu | 2A202601857 |
+
 Role 3 owns clean data modeling, deterministic corruption and repair integration.
-The member name/MSSV must be added before submission.
 
 ## Work and evidence
 

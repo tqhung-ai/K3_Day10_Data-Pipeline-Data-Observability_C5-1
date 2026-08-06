@@ -2,8 +2,12 @@
 
 ## Scope
 
+| Thành viên | MSSV |
+|---|---|
+| Nguyễn Huy Nghĩa | 2A202601943 |
+
 Role 2 owns Crossref fetching, retry behavior, parsing and raw snapshot
-preservation. The member name/MSSV must be added before submission.
+preservation.
 
 ## Work and evidence
 

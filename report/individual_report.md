@@ -9,5 +9,4 @@ Các báo cáo cá nhân theo từng role nằm ở các file sau:
 - [Role 5](role5_individual_report.md)
 - [Role 6](role6_individual_report.md)
 
-Tên và MSSV của từng thành viên chưa có trong repository; cần bổ sung vào từng
-báo cáo trước khi nộp chính thức.
+Thông tin thành viên đã được điền trong từng báo cáo cá nhân.

@@ -9,16 +9,14 @@
 | Repository | https://github.com/tqhung-ai/K3_Day10_Data-Pipeline-Data-Observability_C5-1 |
 | Ngày hoàn thành | 2026-08-06 |
 
-Tên và MSSV của thành viên chưa có trong repository; nhóm cần bổ sung thông tin hành chính trước khi nộp.
-
-| Role | Phạm vi | Deliverable chính |
-|---|---|---|
-| Role 1 | Integration/release QA | Handoff, kiểm tra artifact và release |
-| Role 2 | Crossref ingestion | `src/ingestion/crossref.py`, raw snapshots |
-| Role 3 | Cleaning/corruption/repair | `cleaning.py`, `corruption.py`, repair flow |
-| Role 4 | RAG/index/agent | Chroma collections, retrieval và agent |
-| Role 5 | Evaluation | Test set, answers và metrics |
-| Role 6 | Observability/reporting | Quality, freshness và comparison report |
+| Role | Thành viên | MSSV | Phạm vi | Deliverable chính |
+|---|---|---|---|---|
+| Role 1 | Trần Quốc Hùng | 2A202601683 | Integration/release QA | Handoff, kiểm tra artifact và release |
+| Role 2 | Nguyễn Huy Nghĩa | 2A202601943 | Crossref ingestion | `src/ingestion/crossref.py`, raw snapshots |
+| Role 3 | Phạm Văn Lưu | 2A202601857 | Cleaning/corruption/repair | `cleaning.py`, `corruption.py`, repair flow |
+| Role 4 | Nguyễn Đức Sơn | 2A202601485 | RAG/index/agent | Chroma collections, retrieval và agent |
+| Role 5 | Nguyễn Thế Anh | 2A202601791 | Evaluation | Test set, answers và metrics |
+| Role 6 | Phạm Thế Dũng | 2A202601985 | Observability/reporting | Quality, freshness và comparison report |
 
 ## 2. Tóm tắt kết quả
 
@@ -150,4 +148,4 @@ quality/freshness và token-F1 về baseline.
 - [x] Metrics và quality/freshness khớp artifact thực tế.
 - [x] Source không còn TODO student/NotImplementedError.
 - [x] Không có `.env`, API key hoặc secret trong source/report.
-- [ ] Bổ sung tên và MSSV của 6 thành viên.
+- [x] Bổ sung tên và MSSV của 6 thành viên.

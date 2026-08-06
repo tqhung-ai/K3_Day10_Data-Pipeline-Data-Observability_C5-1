@@ -2,8 +2,11 @@
 
 ## Scope
 
-Role 4 owns the embedding/index contract, retrieval and grounded agent path. The
-member name/MSSV must be added before submission.
+| Thành viên | MSSV |
+|---|---|
+| Nguyễn Đức Sơn | 2A202601485 |
+
+Role 4 owns the embedding/index contract, retrieval and grounded agent path.
 
 ## Work and evidence
 

@@ -2,8 +2,11 @@
 
 ## Scope
 
-Role 6 owns quality gates, freshness monitoring and comparison evidence. The
-member name/MSSV must be added before submission.
+| Thành viên | MSSV |
+|---|---|
+| Phạm Thế Dũng | 2A202601985 |
+
+Role 6 owns quality gates, freshness monitoring and comparison evidence.
 
 ## Work and evidence
 
