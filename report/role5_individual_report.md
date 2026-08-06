@@ -4,7 +4,7 @@
 
 | Thành viên | MSSV |
 |---|---|
-| Nguyễn Thế Anh | 2A202601791 |
+| Nguyễn Huy Nghĩa | 2A202601943 |
 
 Role 5 owns the frozen evaluation set, answer artifacts and metric comparison.
 

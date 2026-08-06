@@ -4,7 +4,7 @@
 
 | Thành viên | MSSV |
 |---|---|
-| Nguyễn Đức Sơn | 2A202601485 |
+| Phạm Văn Lưu | 2A202601857 |
 
 Role 4 owns the embedding/index contract, retrieval and grounded agent path.
 

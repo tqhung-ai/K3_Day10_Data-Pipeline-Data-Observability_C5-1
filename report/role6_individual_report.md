@@ -4,7 +4,7 @@
 
 | Thành viên | MSSV |
 |---|---|
-| Phạm Thế Dũng | 2A202601985 |
+| Nguyễn Thế Anh | 2A202601791 |
 
 Role 6 owns quality gates, freshness monitoring and comparison evidence.
 

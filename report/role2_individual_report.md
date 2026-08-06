@@ -4,7 +4,7 @@
 
 | Thành viên | MSSV |
 |---|---|
-| Nguyễn Huy Nghĩa | 2A202601943 |
+| Nguyễn Đức Sơn | 2A202601485 |
 
 Role 2 owns Crossref fetching, retry behavior, parsing and raw snapshot
 preservation.

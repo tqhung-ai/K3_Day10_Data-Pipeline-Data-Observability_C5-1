@@ -4,7 +4,7 @@
 
 | Thành viên | MSSV |
 |---|---|
-| Phạm Văn Lưu | 2A202601857 |
+| Phạm Thế Dũng | 2A202601985 |
 
 Role 3 owns clean data modeling, deterministic corruption and repair integration.
 
