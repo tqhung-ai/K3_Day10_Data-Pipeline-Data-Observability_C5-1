@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-08-06T05:55:26.786417+00:00",
+  "scenario": "deterministic_cp5_v1",
+  "input_rows": 24,
+  "output_rows": 24,
+  "operations": [
+    {
+      "type": "drop_latest",
+      "paper_id": "10.2118/234689-pa",
+      "before_count": 24,
+      "after_count": 23,
+      "parameter": "max(published)"
+    },
+    {
+      "type": "blank_summary",
+      "paper_id": "10.1007/s10278-026-02086-9",
+      "before": "Abstract Diagnosing jawbone lesions in oral and maxillofacial radiology remains challenging due to overlapping radiological features and the need for integrated...",
+      "after": "",
+      "parameter": "summary=''"
+    },
+    {
+      "type": "summary_noise",
+      "paper_id": "10.21203/rs.3.rs-10178277/v1",
+      "before": "Abstract Time-series foundation models and retrieval-based augmentation have recently emerged as relevant tools for financial forecasting, yet it remains unclea...",
+      "after": "[CORRUPTED_NOISE_2026] Abstract Time-series foundation models and retrieval-based augmentation have recently emerged as relevant tools for financial forecasting...",
+      "parameter": "prefix + unrelated noise token"
+    },
+    {
+      "type": "truncate_title",
+      "paper_id": "10.2196/preprints.106157",
+      "before": "Does retrieval-augmented generation impact medical students\u2019 perceptions of large language models? (Preprint)",
+      "after": "Does retrieval-augmented generation ",
+      "parameter": "keep first max(12, len(title)//3) characters"
+    },
+    {
+      "type": "stale_published",
+      "paper_id": "10.3390/buildings16132637",
+      "before": "2026-07-02",
+      "after": "2024-01-01",
+      "parameter": "freshness_threshold_days=180"
+    },
+    {
+      "type": "duplicate_row",
+      "paper_id": "10.21079/11681/50309",
+      "before_count": 23,
+      "after_count": 24,
+      "parameter": "duplicate exact row"
+    }
+  ],
+  "baseline_untouched": true
+}
