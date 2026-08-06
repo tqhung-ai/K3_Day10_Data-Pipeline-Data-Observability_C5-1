@@ -56,4 +56,19 @@ def run_agent_question(agent: Any, question: str) -> str:
     if not messages:
         return ""
     final_message = messages[-1]
-    return getattr(final_message, "content", str(final_message))
+    content = getattr(final_message, "content", str(final_message))
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts: list[str] = []
+        for item in content:
+            if isinstance(item, str):
+                parts.append(item)
+            elif isinstance(item, dict):
+                text = item.get("text") or item.get("content")
+                if text:
+                    parts.append(str(text))
+            else:
+                parts.append(str(item))
+        return "\n".join(parts)
+    return str(content)
