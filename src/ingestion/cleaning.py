@@ -34,6 +34,21 @@ def _clean_list(values: Any, fallback: str) -> list[str]:
     return cleaned or [fallback]
 
 
+def build_text_for_embedding(row: Any) -> str:
+    """Render the single text representation indexed for a paper row.
+
+    Cleaning and corruption both call this so a corrupted dataset differs from the
+    baseline only by the corrupted fields, never by the embedding text format.
+    """
+    return (
+        f"Title: {row['title']}\n"
+        f"Authors: {row['authors_joined']}\n"
+        f"Categories: {row['categories_joined']}\n"
+        f"Published: {row['published']}\n"
+        f"Summary: {row['summary']}"
+    )
+
+
 def build_clean_dataframe(records: list[PaperRecord], run_date: datetime) -> pd.DataFrame:
     """Clean Crossref records into the stable schema consumed by retrieval.
 
@@ -111,16 +126,7 @@ def build_clean_dataframe(records: list[PaperRecord], run_date: datetime) -> pd.
     df["age_days"] = (run_timestamp.normalize() - df["published"].dt.normalize()).dt.days.clip(lower=0)
     df["published"] = df["published"].dt.date.astype(str)
     df["updated"] = df["updated"].dt.date.astype(str)
-    df["text_for_embedding"] = df.apply(
-        lambda row: (
-            f"Title: {row['title']}\n"
-            f"Authors: {row['authors_joined']}\n"
-            f"Categories: {row['categories_joined']}\n"
-            f"Published: {row['published']}\n"
-            f"Summary: {row['summary']}"
-        ),
-        axis=1,
-    )
+    df["text_for_embedding"] = df.apply(build_text_for_embedding, axis=1)
     result = df.sort_values(["published", "paper_id"], ascending=[False, True], kind="stable").reset_index(drop=True)[columns]
     result.attrs["cleaning_stats"] = {
         "input_rows": len(records),
