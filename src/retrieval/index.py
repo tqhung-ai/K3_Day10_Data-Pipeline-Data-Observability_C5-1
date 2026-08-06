@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+from datetime import UTC, datetime
 
 import chromadb
 import pandas as pd
@@ -58,8 +59,10 @@ class LocalEmbeddingIndex:
                         "authors_joined": row["authors_joined"],
                         "categories_joined": row["categories_joined"],
                         "summary": row["summary"],
+                        "primary_category": row["primary_category"],
                         "abs_url": row["abs_url"],
                         "pdf_url": row["pdf_url"],
+                        "age_days": int(row["age_days"]),
                     },
                 }
             )
@@ -89,6 +92,8 @@ class LocalEmbeddingIndex:
     ) -> "LocalEmbeddingIndex":
         collection_name = cls._derive_collection_name(settings, embeddings_output_path)
         documents = cls._build_documents(df)
+        if not documents:
+            raise ValueError("Cannot build an embedding index from an empty dataframe.")
         persist_path = settings.paths.chroma_dir
         persist_path.mkdir(parents=True, exist_ok=True)
 
@@ -111,6 +116,14 @@ class LocalEmbeddingIndex:
         )
 
         manifest_path = embeddings_output_path or settings.paths.embeddings_json
+        dimension = len(embeddings[0]) if embeddings else 0
+        source_dataset = settings.paths.clean_csv
+        if embeddings_output_path is not None:
+            resolved_output = embeddings_output_path.resolve()
+            if resolved_output == settings.paths.corrupted_embeddings_json.resolve():
+                source_dataset = settings.paths.corrupted_clean_csv
+            elif resolved_output == settings.paths.repaired_embeddings_json.resolve():
+                source_dataset = settings.paths.repaired_clean_csv
         write_json(
             manifest_path,
             {
@@ -118,6 +131,11 @@ class LocalEmbeddingIndex:
                 "embedding_model": settings.embedding_model,
                 "persist_path": str(persist_path),
                 "collection_name": collection_name,
+                "dimension": dimension,
+                "document_count": len(documents),
+                "source_dataset": str(source_dataset),
+                "created_at": datetime.now(UTC).isoformat(),
+                "schema_version": "1",
                 "documents": documents,
             },
         )
@@ -131,12 +149,10 @@ class LocalEmbeddingIndex:
     @classmethod
     def load(cls, settings: Settings, embeddings_path: Path | None = None) -> "LocalEmbeddingIndex":
         payload = read_json(embeddings_path or settings.paths.embeddings_json)
-        return cls(
-            settings=settings,
-            collection_name=payload["collection_name"],
-            documents=payload["documents"],
-            persist_path=Path(payload["persist_path"]),
-        )
+        try:
+            return cls(settings=settings, collection_name=payload["collection_name"], documents=payload["documents"], persist_path=Path(payload["persist_path"]))
+        except Exception as exc:
+            raise RuntimeError(f"Unable to load Chroma collection '{payload.get('collection_name')}'. Build the index first.") from exc
 
     def search(self, query: str, top_k: int | None = None) -> list[SearchResult]:
         query_embedding = self.embedding_model.embed_query(query)

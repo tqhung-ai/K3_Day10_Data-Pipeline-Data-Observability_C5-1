@@ -1,0 +1,15 @@
+{
+  "report_name": "repaired_quality",
+  "row_count": 24,
+  "missing_columns": [],
+  "missing_paper_id": 0,
+  "empty_paper_id": 0,
+  "duplicate_paper_id": 0,
+  "missing_title": 0,
+  "missing_summary": 0,
+  "missing_text_for_embedding": 0,
+  "invalid_published": 0,
+  "invalid_age_days": 0,
+  "passed": true,
+  "status": "PASS"
+}

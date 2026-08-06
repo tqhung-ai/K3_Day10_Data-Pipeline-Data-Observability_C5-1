@@ -1,0 +1,13 @@
+{
+  "newest_published": "2026-08-01",
+  "oldest_published": "2026-02-12",
+  "mean_age_days": 78.20833333333333,
+  "median_age_days": 66.0,
+  "max_age_days": 175,
+  "stale_count": 0,
+  "total_rows": 24,
+  "stale_ratio": 0.0,
+  "threshold_days": 180,
+  "passed": true,
+  "status": "PASS"
+}

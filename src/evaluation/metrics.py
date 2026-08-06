@@ -58,6 +58,10 @@ Return:
 - correct = true only when the answer is materially correct
 - short reasoning
 """.strip()
+    if os.getenv("EVAL_JUDGE_MODE", "").lower() in {"heuristic", "fallback"}:
+        f1 = _token_f1(reference, prediction)
+        score = 5 if f1 >= 0.95 else 3 if f1 >= 0.5 else 1
+        return JudgeVerdict(score=score, correct=score >= 3, reasoning="Fallback heuristic judge explicitly selected by EVAL_JUDGE_MODE.")
     try:
         llm = build_llm(settings=settings, temperature=0.0).with_structured_output(JudgeVerdict)
         return llm.invoke(prompt)
@@ -136,6 +140,7 @@ def evaluate_pipeline(
         "mean_token_f1": mean(item["token_f1"] for item in answers),
         "judge_accuracy": mean(1.0 if item["judge"]["correct"] else 0.0 for item in answers),
         "mean_judge_score": mean(item["judge"]["score"] for item in answers),
+        "evaluator_mode": "heuristic" if os.getenv("EVAL_JUDGE_MODE", "").lower() in {"heuristic", "fallback"} else "llm_with_heuristic_fallback",
     }
     summary["ragas"] = _run_ragas(settings, answers)
 

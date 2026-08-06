@@ -1,0 +1,15 @@
+{
+  "report_name": "corrupted_quality",
+  "row_count": 25,
+  "missing_columns": [],
+  "missing_paper_id": 0,
+  "empty_paper_id": 0,
+  "duplicate_paper_id": 1,
+  "missing_title": 0,
+  "missing_summary": 1,
+  "missing_text_for_embedding": 0,
+  "invalid_published": 0,
+  "invalid_age_days": 0,
+  "passed": false,
+  "status": "FAIL"
+}

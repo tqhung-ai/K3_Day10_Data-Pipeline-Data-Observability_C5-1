@@ -1,0 +1,13 @@
+{
+  "newest_published": "2026-08-01",
+  "oldest_published": "2000-01-01",
+  "mean_age_days": 475.44,
+  "median_age_days": 66.0,
+  "max_age_days": 9999,
+  "stale_count": 1,
+  "total_rows": 25,
+  "stale_ratio": 0.04,
+  "threshold_days": 180,
+  "passed": false,
+  "status": "FAIL"
+}

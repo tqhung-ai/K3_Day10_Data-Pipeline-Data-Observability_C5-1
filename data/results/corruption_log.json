@@ -1,0 +1,82 @@
+[
+  {
+    "corruption_type": "blank_summary",
+    "paper_id": "10.2118/234689-pa",
+    "field": "summary",
+    "before": "Summary In high-risk industrial settings, leveraging large language models (LLMs) for automated accident analysis and generating safety reports has emerged as an efficient workflow. However, this approach is fundamentally constrained by the models\u2019 inherent knowledge limitations, frequently resulting in analyses that lack domain-specific understanding and regulatory alignment. To tackle this issue, we introduce SafeRAG, a multistage retrieval-augmented framework for safety report generation. Specifically, the framework uses an entity-centric approach that prompts the LLMs to internally generate domain-specific knowledge. Concurrently, it performs a hierarchical retrieval of external regulations relevant to the accident at topic, concept, and context levels. To obtain well-structured reports, we leverage prompt engineering, integrating internal and external knowledge. Furthermore, a domain-expert persona is also assigned to help LLMs analyze accidents from a specific perspective. To evaluate our approach, we construct a data set from 10,818 accident-description/report pairs collected from real-world industry reports. Experiments show that SafeRAG substantially outperforms baseline LLMs on metrics that include bidirectional encoder representations from transformers (BERTScore) and bidirectional auto-regressive transformers (BARTScore), demonstrating the effectiveness of our approach.",
+    "after": "",
+    "parameter": {
+      "seed": 10,
+      "row_index": 0
+    },
+    "timestamp": "2026-08-06T05:04:56.790892+00:00",
+    "overlap_with_test_set": true,
+    "affected_question_ids": [
+      "q-01-title",
+      "q-01-summary",
+      "q-01-authors",
+      "q-01-published",
+      "q-01-categories"
+    ]
+  },
+  {
+    "corruption_type": "stale_date",
+    "paper_id": "10.1007/s10278-026-02086-9",
+    "field": "published",
+    "before": "2026-07-13",
+    "after": "2000-01-01",
+    "parameter": {
+      "seed": 10,
+      "row_index": 1
+    },
+    "timestamp": "2026-08-06T05:04:56.790892+00:00",
+    "overlap_with_test_set": true,
+    "affected_question_ids": [
+      "q-02-title",
+      "q-02-summary",
+      "q-02-authors",
+      "q-02-published",
+      "q-02-categories"
+    ]
+  },
+  {
+    "corruption_type": "add_noise",
+    "paper_id": "10.21203/rs.3.rs-10178277/v1",
+    "field": "text_for_embedding",
+    "before": "Title: Retrieval-Augmented Large-Language-Model-Based Time-Series Forecasting for Cross-Market Equity Analysis\nAuthors: Novanto Yudistira, Yanuar Putra Kharisma Adhiyasa\nCategories: Uncategorized\nPublished: 2026-07-10\nSummary: Abstract Time-series foundation models and retrieval-based augmentation have recently emerged as relevant tools for financial forecasting, yet it remains unclear when explicit historical retrieval helps a pre-trained probabilistic forecaster in noisy equity settings. This study evaluates that question through Cross-Market Retrieval-Augmented Lag-Llama (CM-RAF-Lag-Llama), a controlled framework for comparing Lag-Llama-only forecasts with retrieval-augmented forecasts across emerging and developed market panels. The main validation uses three balanced seven-asset panels, IDX7, US7, and JP7, producing a 48-configuration panel-context-horizon grid across four context lengths and four prediction horizons. The hybrid system retrieves analogous historical windows from an indexed memory and blends the retrieved continuation with the Lag-Llama forecast while preserving the same forecasting backbone. In the same-backbone return validation, at least one retrieval variant reduces Lag-Llama MSE in all 48 configurations, with aggregate lower-error retrieval MSE reductions of 28.85\\% for IDX7, 27.27\\% for US7, and 33.60\\% for JP7. A second OHLCV-derived stock-feature experiment evaluates log-price, log-volume, range-volatility, and 20-day realized-volatility targets across 72 matched configurations. In that experiment, validation-selected RAF reduces MSE relative to Lag-Llama-only in 68 of 72 configurations and records the lowest MSE among the compared systems in 22 configurations, including 17 of 18 non-log-price US7 settings. A mechanism-level single-series ablation further compares Lag-Llama-only against Lag-Llama + RAF under zero-shot and scheduler-based inference, showing that retrieval effects are horizon-sensitive. The results indicate that retrieval can serve as an external-memory correction for Lag-Llama under selected equity targets, especially when volatility or volume structure provides reusable historical analogs.",
+    "after": "Title: Retrieval-Augmented Large-Language-Model-Based Time-Series Forecasting for Cross-Market Equity Analysis\nAuthors: Novanto Yudistira, Yanuar Putra Kharisma Adhiyasa\nCategories: Uncategorized\nPublished: 2026-07-10\nSummary: Abstract Time-series foundation models and retrieval-based augmentation have recently emerged as relevant tools for financial forecasting, yet it remains unclear when explicit historical retrieval helps a pre-trained probabilistic forecaster in noisy equity settings. This study evaluates that question through Cross-Market Retrieval-Augmented Lag-Llama (CM-RAF-Lag-Llama), a controlled framework for comparing Lag-Llama-only forecasts with retrieval-augmented forecasts across emerging and developed market panels. The main validation uses three balanced seven-asset panels, IDX7, US7, and JP7, producing a 48-configuration panel-context-horizon grid across four context lengths and four prediction horizons. The hybrid system retrieves analogous historical windows from an indexed memory and blends the retrieved continuation with the Lag-Llama forecast while preserving the same forecasting backbone. In the same-backbone return validation, at least one retrieval variant reduces Lag-Llama MSE in all 48 configurations, with aggregate lower-error retrieval MSE reductions of 28.85\\% for IDX7, 27.27\\% for US7, and 33.60\\% for JP7. A second OHLCV-derived stock-feature experiment evaluates log-price, log-volume, range-volatility, and 20-day realized-volatility targets across 72 matched configurations. In that experiment, validation-selected RAF reduces MSE relative to Lag-Llama-only in 68 of 72 configurations and records the lowest MSE among the compared systems in 22 configurations, including 17 of 18 non-log-price US7 settings. A mechanism-level single-series ablation further compares Lag-Llama-only against Lag-Llama + RAF under zero-shot and scheduler-based inference, showing that retrieval effects are horizon-sensitive. The results indicate that retrieval can serve as an external-memory correction for Lag-Llama under selected equity targets, especially when volatility or volume structure provides reusable historical analogs. CONTROLLED_NOISE_10",
+    "parameter": {
+      "seed": 10,
+      "row_index": 2
+    },
+    "timestamp": "2026-08-06T05:04:56.790892+00:00",
+    "overlap_with_test_set": true,
+    "affected_question_ids": [
+      "q-03-title",
+      "q-03-summary",
+      "q-03-authors",
+      "q-03-published",
+      "q-03-categories"
+    ]
+  },
+  {
+    "corruption_type": "duplicate_row",
+    "paper_id": "10.2196/preprints.106157",
+    "field": "record",
+    "before": "one row",
+    "after": "duplicated row",
+    "parameter": {
+      "seed": 10,
+      "row_index": 3
+    },
+    "timestamp": "2026-08-06T05:04:56.790892+00:00",
+    "overlap_with_test_set": true,
+    "affected_question_ids": [
+      "q-04-title",
+      "q-04-summary",
+      "q-04-authors",
+      "q-04-published",
+      "q-04-categories"
+    ]
+  }
+]
