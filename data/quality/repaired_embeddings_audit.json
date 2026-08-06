@@ -1,0 +1,32 @@
+{
+  "manifest_path": "D:\\AI IN ACTION\\GIAI \u0110OAN 1\\lap10\\K3_Day10_Data-Pipeline-Data-Observability_C5-1\\data\\embeddings\\papers_embeddings_repaired.json",
+  "timestamp": "2026-08-06T05:26:31.061846+00:00",
+  "checks": {
+    "manifest_readable": {
+      "passed": true,
+      "value": "valid JSON",
+      "expected": "valid JSON"
+    },
+    "collection_name": {
+      "passed": true,
+      "value": "papers-repaired",
+      "expected": "non-empty string"
+    },
+    "manifest_doc_count": {
+      "passed": true,
+      "value": 24,
+      "expected": "> 0"
+    },
+    "chroma_collection_accessible": {
+      "passed": true,
+      "value": "count=24",
+      "expected": "collection exists"
+    },
+    "doc_count_match": {
+      "passed": true,
+      "value": "manifest=24, actual=24",
+      "expected": "manifest count == actual count"
+    }
+  },
+  "overall_passed": true
+}

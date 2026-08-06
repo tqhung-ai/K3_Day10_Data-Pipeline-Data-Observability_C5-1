@@ -1,0 +1,48 @@
+{
+  "report_name": "baseline_quality",
+  "timestamp": "2026-08-06T05:14:06.449220+00:00",
+  "total_rows": 24,
+  "checks": {
+    "row_count": {
+      "passed": true,
+      "value": 24,
+      "threshold": "> 0"
+    },
+    "paper_id_not_null": {
+      "passed": true,
+      "value": 0,
+      "threshold": "0"
+    },
+    "paper_id_unique": {
+      "passed": true,
+      "value": 0,
+      "threshold": "0"
+    },
+    "title_not_null": {
+      "passed": true,
+      "value": 0,
+      "threshold": "0"
+    },
+    "summary_not_empty": {
+      "passed": true,
+      "value": 0,
+      "threshold": "0"
+    },
+    "summary_min_length": {
+      "passed": true,
+      "value": 0,
+      "threshold": "0 (min 50 chars)"
+    },
+    "duplicate_rows": {
+      "passed": true,
+      "value": 0,
+      "threshold": "0"
+    },
+    "freshness": {
+      "passed": true,
+      "value": 0,
+      "threshold": "<= 180 days"
+    }
+  },
+  "overall_passed": true
+}

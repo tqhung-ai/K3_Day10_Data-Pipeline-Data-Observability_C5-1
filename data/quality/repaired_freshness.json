@@ -1,0 +1,9 @@
+{
+  "latest_published": "2026-08-01",
+  "oldest_published": "2026-02-12",
+  "stale_rows": 0,
+  "total_rows": 24,
+  "freshness_threshold_days": 180,
+  "is_fresh": true,
+  "timestamp": "2026-08-06T05:14:06.481305+00:00"
+}
