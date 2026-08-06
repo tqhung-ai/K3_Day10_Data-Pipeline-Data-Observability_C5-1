@@ -1,8 +1,8 @@
 {
-  "report_name": "corrupted",
-  "generated_at": "2026-08-06T09:04:53.112488+00:00",
+  "report_name": "repaired",
+  "generated_at": "2026-08-06T09:05:53.502708+00:00",
   "total_rows": 24,
-  "success": false,
+  "success": true,
   "checks": [
     {
       "name": "row_count",
@@ -18,8 +18,8 @@
     },
     {
       "name": "paper_id_unique",
-      "passed": false,
-      "observed": 1,
+      "passed": true,
+      "observed": 0,
       "expected": 0
     },
     {
@@ -30,8 +30,8 @@
     },
     {
       "name": "summary_min_length",
-      "passed": false,
-      "observed": 1,
+      "passed": true,
+      "observed": 0,
       "expected": "0 rows shorter than 20 characters"
     },
     {
@@ -48,8 +48,8 @@
     },
     {
       "name": "freshness_threshold",
-      "passed": false,
-      "observed": 1,
+      "passed": true,
+      "observed": 0,
       "expected": "0 rows older than 180 days"
     }
   ]
