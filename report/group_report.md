@@ -5,7 +5,7 @@
 | Trường | Giá trị |
 |---|---|
 | Khóa/lớp | K3 |
-| Tên nhóm | Data Pipeline & Data Observability — C5-1 |
+| Tên nhóm | C5-1 |
 | Repository | https://github.com/tqhung-ai/K3_Day10_Data-Pipeline-Data-Observability_C5-1 |
 | Ngày hoàn thành | 2026-08-06 |
 
